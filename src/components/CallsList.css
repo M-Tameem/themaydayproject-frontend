@@ -1,0 +1,56 @@
+/* src/components/CallsList.css */
+
+:root {
+    --main-color: rgb(60,91,111);
+    --accent-color: rgb(223, 208, 184);
+    --background-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+  }
+  
+  .calls-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .call-group {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .call-item {
+    background-color: var(--background-color);
+    color: var(--main-color);
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .call-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .modal-content {
+    background-color: var(--background-color);
+    color: var(--main-color);
+  }
+  
+  .modal-header, .modal-footer {
+    border-color: var(--accent-color);
+  }
+  
+  .button {
+    background-color: var(--main-color);
+    color: var(--background-color);
+  }
+  
+  .button:hover {
+    background-color: var(--accent-color);
+  }
+  
